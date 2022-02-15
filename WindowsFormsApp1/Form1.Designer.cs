@@ -32,9 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.aluNombre = new System.Windows.Forms.TextBox();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 50);
+            this.button1.Location = new System.Drawing.Point(539, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 23);
             this.button1.TabIndex = 2;
@@ -70,13 +71,6 @@
             this.aluNombre.Name = "aluNombre";
             this.aluNombre.Size = new System.Drawing.Size(369, 20);
             this.aluNombre.TabIndex = 3;
-            // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(409, 50);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(69, 20);
-            this.aluNota.TabIndex = 4;
             // 
             // listaAlumnos
             // 
@@ -96,20 +90,28 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Lista de alumnos";
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(409, 50);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(88, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 450);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listaAlumnos);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.aluNombre);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Alumnos AO2CFSY";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,9 +123,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox aluNombre;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.TextBox listaAlumnos;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
